@@ -14,7 +14,7 @@ nvidia-smi 查看gpu信息
 
 这个阶段需要大家掌握深度学习中常用的软件的安装。
 
-## Mnist手写体识别
+## Mnist手写体识别 
 1.Mnist数据库可以从[这里](http://yann.lecun.com/exdb/mnist/)下载，也可以在pytorch中torchvision的datasets.MNIST中直接访问。  
 
 2.模型结构推荐大家用Lenet-5, Resnet18等小模型。注意图片的通道数目和分辨率是否和模型要求的相匹配。  
@@ -35,16 +35,17 @@ nvidia-smi 查看gpu信息
 
 4.基本的调参数方式
 
-## 草图识别竞赛
+## 草图识别竞赛 （4.11-5.11）
 1.草图数据库包含25个类别，每个类别800张草图，一共20，000张草图。20个类别作为seen类别，5个类别作为unseen类别，每个类别650张草图作为训练集，50张作为验证集，100张作为测试集
 
 2.草图有2中存储方式，png格式（分辨率256x256）,svg格式（包含笔画顺序信息等）。
 
-3.目的是锻炼大家的实践能力，我们有限比较resnet50单模型的精度，loss不限。不用quick draw的pretrain模型
+3.目的是锻炼大家的实践能力，我们有限比较resnet50单模型的精度，loss不限，辅助任务不限。不用quick draw的pretrain模型
 
 4.衡量准确率和泛化能力
+5.建议补充各种分类loss（center loss，focal loss， arcface loss等等）和其调优细节
 
-奖励和细节待补充。
+数据，奖励，细节，评测代码待补充。
 
 | 渣本榜| seen | unseen |
 | -- | --| -- |
