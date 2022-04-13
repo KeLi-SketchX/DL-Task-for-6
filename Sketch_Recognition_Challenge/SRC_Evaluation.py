@@ -2,15 +2,13 @@ import numpy as np
 import pandas as pd
 import openpyxl
 import os
-import xlwt
 from sklearn.metrics import accuracy_score,classification_report,confusion_matrix
 from openpyxl import Workbook, load_workbook
-from builtins import str
 import time
 
 def write2excel(img_names, pred_labels):
     for i in range(len(img_names)):
-        img_names[i] = str(img_names[i])
+        img_names[i] = img_names[i].split('/')[-1].split('.')[0]
     if len(img_names) != len(pred_labels):
         print('图片名列表与结果列表长度不同，请检查！')
         return
@@ -96,7 +94,7 @@ def evaluate(excelpath,seen=1):
     print(confusion_matrix(y_true, y_pred))
 
 if __name__=="__main__":
-    img_names = [19142, 19143, 19144, 19145]
+    img_names = ['19142', '19143', '19144', '19145']
     pred_labels = ['mouse', 'backpack', 'backpack', 'backpack']
     b = write2excel(img_names, pred_labels)
     evaluate(b)
