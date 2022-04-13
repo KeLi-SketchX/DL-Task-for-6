@@ -94,7 +94,7 @@ def evaluate(excelpath,seen=1):
     print(confusion_matrix(y_true, y_pred))
 
 if __name__=="__main__":
-    img_names = ['19142', '19143', '19144', '19145']
+    img_names = ['19142.png', '19143.png', '19144.png', '19145.png']
     pred_labels = ['mouse', 'backpack', 'backpack', 'backpack']
-    b = write2excel(img_names, pred_labels)
-    evaluate(b)
+    pred_file = write2excel(img_names, pred_labels)
+    evaluate(pred_file)
