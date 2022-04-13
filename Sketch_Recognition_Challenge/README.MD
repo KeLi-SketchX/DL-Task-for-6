@@ -15,4 +15,4 @@
     pred_labels = ['mouse', 'backpack', 'backpack', 'backpack']      ##预测类别名，和上面的图片名一一对应，利用list存储
     pred_file = write2excel(img_names, pred_labels)                  ##输入图片名和类别名，将其存储在excel文件中,并返回文件名
     evaluate(pred_file,seen=1)                                       ##将上面的文件名和测试集类型，获得评价结果。测试集类型分为seen和unseen，默认为1，为seen类别，设置为0，为unseen类别
-'''
+’‘’
