@@ -44,7 +44,16 @@
 9、将最新结果汇报给我，我给添加到github
 
 # baseline代码说明
-我上传了一份可以跑这两个任务的baseline代码。SPG大概能在0.97以上
+我上传了一份可以跑这两个任务的baseline代码。SPG大概能在0.97以上(seen)。TUBerlin大概能在0.77以上。由于我没有完全跑完，所以结果仅作参考。
 
-我上传了一份可以跑这两个任务的baseline代码。SPG能在（seen）
-我上传了一份可以跑这两个任务的baseline代码。SPG能在
+提升精度的方法有：
+
+1、更换pretrain模型，现在有很多在大量数据集上训练无监督方法，这个模型是不是比现在的pretrain模型好？这些常见的方法有(DeepClusterv2)[https://github.com/facebookresearch/swav], (SWAV)[https://github.com/facebookresearch/swav], (OBOW)[https://github.com/valeoai/obow],(BarlowTwins)[https://github.com/facebookresearch/barlowtwins]等等
+
+
+
+
+
+
+
+
