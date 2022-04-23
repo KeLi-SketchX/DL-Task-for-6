@@ -57,7 +57,8 @@ nvidia-smi 查看gpu信息
 | -- | --| -- |--|
 
 ##TUBerlin分类
-|渣本榜|accuracy| 简介（可选）|
+
+|渣本榜|accuracy|简介（可选）|
 |胡柒柒|78.95|baseline代码|
 
 
