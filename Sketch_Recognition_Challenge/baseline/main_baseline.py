@@ -219,7 +219,7 @@ def main(opt):
     best_perf_array = trainAndValidate(train_loader,val_loader, model, optimizer, lossFunc,schedule,opt)
 
 
-    log_line='best result {:.4f}'.format(best_perf_array[0])
+    log_line='best result {:.4f}'.format(best_perf_array)
     print(log_line)
     log.info(log_line + '\n')
     log.info('-------------------------------------------------------- \n')
