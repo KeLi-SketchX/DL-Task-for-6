@@ -25,6 +25,6 @@
     2.png
     ...
 ```
-sketch_photo_id.mat中字典‘photo_id_train’和‘photo_id_test’分别存储训练集和测试集草图和图片的对应关系
+sketch_photo_id.mat中字典‘photo_id_train’和‘photo_id_test’分别存储训练集和测试集草图和图片的对应关系，两者格式一样。
 
-以字典‘photo_id_test’为例说明，data[‘photo_id_test’]数据形式为666*1的数组，data[‘photo_id_test’][0]中
+以字典‘photo_id_test’为例说明，data[‘photo_id_test’]数据形式为666*1的数组，data[‘photo_id_test’][0]为test/sketch/1.png对应的photo文件名，data[‘photo_id_test’][1]为test/sketch/2.png对应的photo文件名。
