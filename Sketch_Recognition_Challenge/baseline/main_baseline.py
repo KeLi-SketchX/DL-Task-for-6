@@ -85,7 +85,7 @@ def trainAndValidate(train_loader,val_loader, model, optimizer, lossFunc,schedul
         theTime = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         if acc > best_perf_array:
             best_perf_array = acc
-            torch.save(model, os.path.join(opt['checkpoint_path'], 'best.pth.tar'))
+            torch.save(model.state_dict(), os.path.join(opt['checkpoint_path'], 'best.pth.tar'))
         log.info("Time: [%s], Epoch [%d], acc: %.4f, best acc: %.4f\n" % (
                 theTime, idx, acc, best_perf_array))
 
@@ -219,9 +219,7 @@ def main(opt):
     best_perf_array = trainAndValidate(train_loader,val_loader, model, optimizer, lossFunc,schedule,opt)
 
 
-    log_line='best result {:.4f}, {:.4f}, {:.4f} '.format(best_perf_array[0],
-                                                                best_perf_array[1],
-                                                                best_perf_array[2])
+    log_line='best result {:.4f}'.format(best_perf_array[0])
     print(log_line)
     log.info(log_line + '\n')
     log.info('-------------------------------------------------------- \n')
