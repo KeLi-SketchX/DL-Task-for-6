@@ -16,6 +16,14 @@
     2.png
     ...
 -test
+  -photo
+    1.png
+    2.png
+    ...
+  -sketch
+    1.png
+    2.png
+    ...
 ```
 sketch_photo_id.mat中字典‘photo_id_train’和‘photo_id_test’分别存储训练集和测试集草图和图片的对应关系
 
