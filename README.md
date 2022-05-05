@@ -55,6 +55,7 @@ nvidia-smi 查看gpu信息
 |渣本榜| seen | unseen |备注|
 | --- | --- |--- | ---|
 | 胡柒柒 | 0.97 |-- |baseline|
+| 胡继锦 | 0.98 |-- |--|
 
 
 ##TUBerlin数据集分类
