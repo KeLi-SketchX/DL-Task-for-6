@@ -4,7 +4,7 @@
 
 目前细粒度的基于草图的图像检索的经典框架是利用CNN提取特征，利用特征相似度进行排序检索，训练时利用triplet loss约束草图和图像间的特征空间。
 
-[数据库]()。数据库的图片存放格式如下所示。草图和图片的对应关系见sketch_photo_id.mat
+[数据库](https://pan.baidu.com/s/1b1W1JnzjIZcOeMMdip-BLg?pwd=qn5v)。数据库的图片存放格式如下所示。草图和图片的对应关系见sketch_photo_id.mat
 ```
 -train
   -photo
