@@ -48,7 +48,7 @@
 
 有如下一些提升精度的方法，大家可以去尝试下。
 
-1、更换pretrain模型，现在有很多在大量数据集上训练无监督方法，这个模型是不是比现在的pretrain模型好？这些常见的方法有[DeepClusterv2](https://github.com/facebookresearch/swav), [SWAV](https://github.com/facebookresearch/swav), [OBOW](https://github.com/valeoai/obow),[BarlowTwins](https://github.com/facebookresearch/barlowtwins)等等。
+1、更换pretrain模型，现在有很多在大量数据集上训练无监督方法，这个模型是不是比现在的pretrain模型好？这些常见的方法有[DeepClusterv2](https://github.com/facebookresearch/swav), [SWAV](https://github.com/facebookresearch/swav),[BarlowTwins](https://github.com/facebookresearch/barlowtwins)等等。
 
 2、更换loss (Focal loss, Center loss, AM Softmax, Arcface)。
 
