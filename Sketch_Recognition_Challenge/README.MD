@@ -56,8 +56,7 @@
 
 4、测试是进行Multi-crop，代码里面已经包含。
 
-
-
+胡继锦同学上传了一份她自己写的evaluation的[代码](https://github.com/HuJijin/Sketch_Recognition_Challenge/tree/main/evaluation)，从读数据，输入模型，到出来评测结果。
 
 
 
